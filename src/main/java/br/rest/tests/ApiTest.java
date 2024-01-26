@@ -30,7 +30,6 @@ public class ApiTest extends BaseTest {
             .statusCode(200)
             .extract().path("token");
         requestSpecification.header("Authorization", "JWT " + TOKEN);
-        System.out.println(TOKEN);
     }
 
     @Test
@@ -40,7 +39,6 @@ public class ApiTest extends BaseTest {
         .when()
             .post("/contas")
         .then()
-            .log().all()
             .statusCode(201)
             .extract().path("id");
     }
