@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class BarrigaTest extends BaseTest {
+public class ApiTest extends BaseTest {
     private static String CONTA_NAME = "Conta " + System.nanoTime();
     private static Integer CONTA_ID;
     private static Integer MOVIMENTACAO_ID;
